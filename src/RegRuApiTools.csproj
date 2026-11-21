@@ -7,9 +7,9 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <ApplicationIcon>app.ico</ApplicationIcon>
-    <RootNamespace>RegRuDns</RootNamespace>
-    <AssemblyName>RegRuDns</AssemblyName>
-    <Product>REG.RU DNS</Product>
+    <RootNamespace>RegRuApiTools</RootNamespace>
+    <AssemblyName>RegRuApiTools</AssemblyName>
+    <Product>REG.RU API Tools</Product>
     <Description>Edit REG.RU DNS zones over REG.API 2</Description>
     <PublishSingleFile>true</PublishSingleFile>
     <SelfContained>false</SelfContained>

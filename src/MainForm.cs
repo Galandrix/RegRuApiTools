@@ -1,4 +1,4 @@
-namespace RegRuDns;
+namespace RegRuApiTools;
 
 public sealed class MainForm : Form
 {

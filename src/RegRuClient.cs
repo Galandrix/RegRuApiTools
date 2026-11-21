@@ -1,7 +1,7 @@
 using System.Net.Http;
 using System.Text.Json;
 
-namespace RegRuDns;
+namespace RegRuApiTools;
 
 internal sealed record DomainItem(string Name, string State, string Expires)
 {

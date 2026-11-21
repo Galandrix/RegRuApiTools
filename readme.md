@@ -1,4 +1,4 @@
-# REG.RU DNS
+# REG.RU API Tools
 
 Редактор зон DNS REG.RU через REG.API 2. Список доменов аккаунта, записи зоны, создание, правка, удаление и TTL зоны.
 
@@ -11,11 +11,11 @@
 
 ## Запуск
 
-`bin/RegRuDns.exe`
+`bin/RegRuApiTools.exe`
 
 Сборка — один файл без рантайма внутри, Desktop Runtime всё равно нужен.
 
-Настройки: `%AppData%\RegRuDns\settings.json`. Пароль API записан через DPAPI текущего пользователя Windows.
+Настройки: `%AppData%\RegRuApiTools\settings.json`. Пароль API записан через DPAPI текущего пользователя Windows.
 
 ## Сборка
 
@@ -23,7 +23,7 @@
 dotnet publish src -c Release -r win-x64 -o bin
 ```
 
-Получается один `bin/RegRuDns.exe` (`PublishSingleFile`, framework-dependent).
+Получается один `bin/RegRuApiTools.exe` (`PublishSingleFile`, framework-dependent).
 
 ## Возможности
 

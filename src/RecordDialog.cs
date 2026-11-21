@@ -1,7 +1,7 @@
 using System.Net;
 using System.Net.Sockets;
 
-namespace RegRuDns;
+namespace RegRuApiTools;
 
 internal sealed class RecordDialog : Form
 {

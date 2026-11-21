@@ -2,7 +2,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
 
-namespace RegRuDns;
+namespace RegRuApiTools;
 
 internal static class AppSettings
 {
@@ -18,6 +18,12 @@ internal static class AppSettings
     public static string SettingsPath =>
         Path.Combine(
             Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+            "RegRuApiTools",
+            "settings.json");
+
+    private static string LegacySettingsPath =>
+        Path.Combine(
+            Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
             "RegRuDns",
             "settings.json");
 
@@ -25,12 +31,13 @@ internal static class AppSettings
     {
         try
         {
-            if (!File.Exists(SettingsPath))
+            var path = File.Exists(SettingsPath) ? SettingsPath : LegacySettingsPath;
+            if (!File.Exists(path))
             {
                 return;
             }
 
-            var dto = JsonSerializer.Deserialize<Dto>(File.ReadAllText(SettingsPath));
+            var dto = JsonSerializer.Deserialize<Dto>(File.ReadAllText(path));
             if (dto is null)
             {
                 return;

@@ -1,4 +1,4 @@
-namespace RegRuDns;
+namespace RegRuApiTools;
 
 static class Program
 {

@@ -1,4 +1,4 @@
-namespace RegRuDns;
+namespace RegRuApiTools;
 
 internal static class Ui
 {
@@ -14,7 +14,7 @@ internal static class Ui
 
     private static Icon LoadAppIcon()
     {
-        var stream = typeof(Ui).Assembly.GetManifestResourceStream("RegRuDns.app.ico");
+        var stream = typeof(Ui).Assembly.GetManifestResourceStream("RegRuApiTools.app.ico");
         if (stream != null)
             return new Icon(stream);
 

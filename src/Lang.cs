@@ -1,4 +1,4 @@
-namespace RegRuDns;
+namespace RegRuApiTools;
 
 internal enum AppLanguage
 {
@@ -153,5 +153,5 @@ internal static class Lang
     public static string SelectDomain => S("Choose a domain first.", "Сначала выберите домен.");
     public static string SelectRecord => S("Choose a record first.", "Сначала выберите запись.");
     public static string NothingToCopy => S("There is nothing to copy.", "Нечего копировать.");
-    public static string AppTitle => "REG.RU DNS";
+    public static string AppTitle => "REG.RU API Tools";
 }

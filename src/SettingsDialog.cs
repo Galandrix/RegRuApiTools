@@ -1,4 +1,4 @@
-namespace RegRuDns;
+namespace RegRuApiTools;
 
 internal sealed class SettingsDialog : Form
 {
